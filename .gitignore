@@ -1,2 +1,5 @@
 pyqt/__pycache__/
 *.qrc
+*.pptx
+*.ppt
+*.hwp
