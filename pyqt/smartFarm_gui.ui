@@ -51,6 +51,58 @@
        <string notr="true">background-image: url(:/Texts/images_backup/7inch_title.png);</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="controlMenu">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Control</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dataMenu">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="graphMenu">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Graph</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cameraMenu">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Camera</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
@@ -260,7 +312,7 @@ border : none;</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="G:/3nd_prj/pyqt/images.qrc"/>
  </resources>
  <connections/>
 </ui>
