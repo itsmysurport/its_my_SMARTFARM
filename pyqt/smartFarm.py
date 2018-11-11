@@ -10,6 +10,10 @@ def event(self):
     self.redButton.clicked.connect(self.red_onoff)
     self.greenButton.clicked.connect(self.green_onoff)
     self.whiteButton.clicked.connect(self.white_onoff)
+    self.controlMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(0))
+    self.dataMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(1))
+    self.graphMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(2))
+    self.cameraMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(3))
 
 def red_onoff(self):
     global red_status
