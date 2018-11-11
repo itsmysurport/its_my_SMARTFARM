@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="Texts">
+    <file>images_backup/7inch_title.png</file>
+    <file>images_backup/title.png</file>
+  </qresource>
+  <qresource prefix="Widget">
+    <file>images_backup/fisrt_ui.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>images_backup/67x81_off_bulb.png</file>
+    <file>images_backup/117x46_off_button.png</file>
+    <file>images_backup/117x46_on_button.png</file>
+    <file>images_backup/67x81_green_bulb.png</file>
+    <file>images_backup/67x81_red_bulb.png</file>
+    <file>images_backup/67x81_white_bulb.png</file>
+  </qresource>
+</RCC>
