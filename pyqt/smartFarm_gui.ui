@@ -299,20 +299,9 @@ border : none;</string>
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="G:/3nd_prj/pyqt/images.qrc"/>
+  <include location="images.qrc"/>
  </resources>
  <connections/>
 </ui>
