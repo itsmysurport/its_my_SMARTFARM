@@ -107,6 +107,18 @@ class Ui_MainWindow(object):
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.stackedWidget.addWidget(self.page_2)
+        self.page_3 = QtWidgets.QWidget()
+        self.page_3.setObjectName("page_3")
+        self.tempView = PlotWidget(self.page_3)
+        self.tempView.setGeometry(QtCore.QRect(20, 70, 361, 291))
+        self.tempView.setObjectName("tempView")
+        self.humiView = PlotWidget(self.page_3)
+        self.humiView.setGeometry(QtCore.QRect(410, 70, 361, 291))
+        self.humiView.setObjectName("humiView")
+        self.stackedWidget.addWidget(self.page_3)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.stackedWidget.addWidget(self.page_4)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -123,4 +135,5 @@ class Ui_MainWindow(object):
         self.humiLabel.setText(_translate("MainWindow", "99%"))
         self.tempLabel.setText(_translate("MainWindow", "99°C"))
 
+from pyqtgraph import PlotWidget
 import images_rc
