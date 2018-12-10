@@ -4,6 +4,7 @@ from smartFarm_gui import *
 import pyqtgraph as pg
 import threading
 import time
+import random
 
 # ser = serial.Serial(port='COM5',
 #                     baudrate=115200,
@@ -144,19 +145,28 @@ def updating(self):
     while True:
         if self.onGraph:                            # If the selected current menu is 'Graph',
             if (input()):                               # Need : If the program received data from MCU,
+                self.plotting()                     # Need! : Wait to check until a click-button event occurs in the program
                 print(self.onGraph, '!')                # Need : draw/update a GRAPH
         else:                                       # If not selected current menu is 'Graph',
             print(self.onGraph)                         # Need : stop draw/update a GRAPH
         time.sleep(5)                               # Check the current menu every 5 seconds.
                                                     # Need : Wait to check until a click-button event occurs in the program
 
+def plotting(self):
+    data = random.randrange(0,31)
+    self.a.append(data)
+    self.tempView.clear()
+    self.tempView.plot(self.a, pen = pg.mkPen(color=(255, 100, 25)))
+
 Ui_MainWindow.event = event
 Ui_MainWindow.red_onoff = red_onoff
 Ui_MainWindow.green_onoff = green_onoff
 Ui_MainWindow.white_onoff = white_onoff
+Ui_MainWindow.plotting = plotting
 Ui_MainWindow.update = update
 Ui_MainWindow.updating = updating
 Ui_MainWindow.onGraph = False
+Ui_MainWindow.a = []
 
 if __name__=="__main__":
     import sys
