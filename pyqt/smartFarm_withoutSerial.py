@@ -143,20 +143,19 @@ def update(self):
 
 def updating(self):
     while True:
-        if self.onGraph:                            # If the selected current menu is 'Graph',
-            if (input()):                               # Need : If the program received data from MCU,
-                self.plotting()                     # Need! : Wait to check until a click-button event occurs in the program
-                print(self.onGraph, '!')                # Need : draw/update a GRAPH
-        else:                                       # If not selected current menu is 'Graph',
-            print(self.onGraph)                         # Need : stop draw/update a GRAPH
-        time.sleep(5)                               # Check the current menu every 5 seconds.
-                                                    # Need : Wait to check until a click-button event occurs in the program
+        if (self.stackedWidget.currentIndex()) == 2:
+            self.plotting()
+            print('count')
+        else:
+            pass
 
 def plotting(self):
-    data = random.randrange(0,31)
-    self.a.append(data)
-    self.tempView.clear()
-    self.tempView.plot(self.a, pen = pg.mkPen(color=(255, 100, 25)))
+    if input():
+        data = random.randrange(0,31)
+        self.a.append(data)
+        print(self.a)
+        self.tempView.clear()
+        self.tempView.plot(self.a, pen = pg.mkPen(color=(255, 100, 25)))
 
 Ui_MainWindow.event = event
 Ui_MainWindow.red_onoff = red_onoff
