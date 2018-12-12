@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\smartFarm_gui.ui'
+# Form implementation generated from reading ui file 'smartFarm_gui.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -118,6 +118,9 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setObjectName("page_4")
+        self.widget_2 = QtWebEngineWidgets.QWebEngineView(self.page_4)
+        self.widget_2.setGeometry(QtCore.QRect(140, 10, 520, 390))
+        self.widget_2.setObjectName("widget_2")
         self.stackedWidget.addWidget(self.page_4)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -135,5 +138,16 @@ class Ui_MainWindow(object):
         self.humiLabel.setText(_translate("MainWindow", "99%"))
         self.tempLabel.setText(_translate("MainWindow", "99°C"))
 
+from PyQt5 import QtWebEngineWidgets
 from pyqtgraph import PlotWidget
 import images_rc
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
