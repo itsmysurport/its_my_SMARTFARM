@@ -169,12 +169,14 @@ Ui_MainWindow.a = []
 
 if __name__=="__main__":
     import sys
+    from PyQt5.QtCore import QUrl
     app = QtWidgets.QApplication(sys.argv)
 
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     ui.event()
+    ui.widget_2.setUrl(QUrl("http://www.naver.com/"))
     t = threading.Thread(target=ui.updating, args=())
     t.start()
     # ser.write(bytes('\x02L01F000R255W255B255\x03\r\n'.encode()))    # Device __init__
