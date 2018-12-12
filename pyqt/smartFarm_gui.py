@@ -135,8 +135,8 @@ class Ui_MainWindow(object):
         self.dataMenu.setText(_translate("MainWindow", "Data"))
         self.graphMenu.setText(_translate("MainWindow", "Graph"))
         self.cameraMenu.setText(_translate("MainWindow", "Camera"))
-        self.humiLabel.setText(_translate("MainWindow", "99%"))
-        self.tempLabel.setText(_translate("MainWindow", "99°C"))
+        self.humiLabel.setText(_translate("MainWindow", "50%"))
+        self.tempLabel.setText(_translate("MainWindow", "27°C"))
 
 from PyQt5 import QtWebEngineWidgets
 from pyqtgraph import PlotWidget
@@ -150,4 +150,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
