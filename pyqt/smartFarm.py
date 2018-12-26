@@ -1,6 +1,11 @@
 import serial
 from PyQt5 import QtCore, QtGui, QtWidgets
 from smartFarm_gui import *
+import pyqtgraph as pg
+from PyQt5.QtCore import QTimer
+
+x = [2,4,6,8,10]
+y = [1,2,3,4,5]
 
 ser = serial.Serial(port='COM5',
                     baudrate=115200,
@@ -22,6 +27,15 @@ def event(self):
     self.dataMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(1))
     self.graphMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(2))
     self.cameraMenu.clicked.connect(lambda x:self.stackedWidget.setCurrentIndex(3))
+
+def graphDraw(self):
+    self.tempView.setBackground('#11ffff')
+    self.tempView.plot(x, pen=pg.mkPen('r', width=2),
+        style=QtCore.Qt.DashLine, symbol=('o'),
+        symbolBrush='r')
+    self.humiView.plot(y, pen=pg.mkPen('b', width=2),
+        style=QtCore.Qt.DashLine, symbol=('x'),
+        symbolBrush='b')
 
 def red_onoff(self):
     global red_status, green_status, white_status
@@ -129,6 +143,7 @@ Ui_MainWindow.event = event
 Ui_MainWindow.red_onoff = red_onoff
 Ui_MainWindow.green_onoff = green_onoff
 Ui_MainWindow.white_onoff = white_onoff
+Ui_MainWindow.graphDraw = graphDraw
 
 if __name__=="__main__":
     import sys
@@ -138,7 +153,9 @@ if __name__=="__main__":
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     ui.event()
+    ui.graphDraw()
     ser.write(bytes('\x02L01F000R255W255B255\x03\r\n'.encode()))    # Device __init__
+
     MainWindow.show()
 
     sys.exit(app.exec_())
