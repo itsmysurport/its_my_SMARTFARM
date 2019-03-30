@@ -116,6 +116,94 @@
      <property name="currentIndex">
       <number>0</number>
      </property>
+     <widget class="QWidget" name="startPage">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>551</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>NanumSquare</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Welcome to Smartfarm - ESC</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="connectButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>220</y>
+         <width>501</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(81, 163, 0);
+font: 18pt &quot;NanumSquare&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Connect to Smartfarm</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="error">
+      <widget class="QPushButton" name="connectButton_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>220</y>
+         <width>501</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(81, 163, 0);
+font: 18pt &quot;NanumSquare&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Reconnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>551</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>NanumSquare</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(213, 0, 3);</string>
+       </property>
+       <property name="text">
+        <string>ERROR: Invaild Connection</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
      <widget class="QWidget" name="page">
       <widget class="QWidget" name="ui_widget" native="true">
        <property name="geometry">
@@ -250,7 +338,7 @@ border : none;</string>
        <property name="font">
         <font>
          <family>나눔스퀘어 Light</family>
-         <pointsize>31</pointsize>
+         <pointsize>20</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -278,7 +366,7 @@ border : none;</string>
        <property name="font">
         <font>
          <family>나눔스퀘어 Light</family>
-         <pointsize>31</pointsize>
+         <pointsize>20</pointsize>
         </font>
        </property>
        <property name="styleSheet">

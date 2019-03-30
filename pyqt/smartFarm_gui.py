@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'smartFarm_gui.ui'
+# Form implementation generated from reading ui file '.\smartFarm_gui.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.7.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -41,6 +41,40 @@ class Ui_MainWindow(object):
         self.stackedWidget = QtWidgets.QStackedWidget(self.background)
         self.stackedWidget.setGeometry(QtCore.QRect(0, 70, 800, 413))
         self.stackedWidget.setObjectName("stackedWidget")
+        self.startPage = QtWidgets.QWidget()
+        self.startPage.setObjectName("startPage")
+        self.label = QtWidgets.QLabel(self.startPage)
+        self.label.setGeometry(QtCore.QRect(130, 60, 551, 41))
+        font = QtGui.QFont()
+        font.setFamily("NanumSquare")
+        font.setPointSize(24)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.connectButton = QtWidgets.QPushButton(self.startPage)
+        self.connectButton.setGeometry(QtCore.QRect(160, 220, 501, 101))
+        self.connectButton.setStyleSheet("background-color: rgb(81, 163, 0);\n"
+"font: 18pt \"NanumSquare\";")
+        self.connectButton.setObjectName("connectButton")
+        self.stackedWidget.addWidget(self.startPage)
+        self.error = QtWidgets.QWidget()
+        self.error.setObjectName("error")
+        self.connectButton_2 = QtWidgets.QPushButton(self.error)
+        self.connectButton_2.setGeometry(QtCore.QRect(160, 220, 501, 101))
+        self.connectButton_2.setStyleSheet("background-color: rgb(81, 163, 0);\n"
+"font: 18pt \"NanumSquare\";")
+        self.connectButton_2.setObjectName("connectButton_2")
+        self.label_2 = QtWidgets.QLabel(self.error)
+        self.label_2.setGeometry(QtCore.QRect(130, 60, 551, 41))
+        font = QtGui.QFont()
+        font.setFamily("NanumSquare")
+        font.setPointSize(24)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("color: rgb(213, 0, 3);")
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.stackedWidget.addWidget(self.error)
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.ui_widget = QtWidgets.QWidget(self.page)
@@ -87,7 +121,7 @@ class Ui_MainWindow(object):
         self.humiLabel.setGeometry(QtCore.QRect(95, 295, 117, 33))
         font = QtGui.QFont()
         font.setFamily("나눔스퀘어 Light")
-        font.setPointSize(31)
+        font.setPointSize(20)
         self.humiLabel.setFont(font)
         self.humiLabel.setStyleSheet("color: rgb(255, 255, 255);")
         self.humiLabel.setTextFormat(QtCore.Qt.AutoText)
@@ -97,7 +131,7 @@ class Ui_MainWindow(object):
         self.tempLabel.setGeometry(QtCore.QRect(95, 348, 117, 33))
         font = QtGui.QFont()
         font.setFamily("나눔스퀘어 Light")
-        font.setPointSize(31)
+        font.setPointSize(20)
         self.tempLabel.setFont(font)
         self.tempLabel.setStyleSheet("color: rgb(255, 255, 255);")
         self.tempLabel.setTextFormat(QtCore.Qt.AutoText)
@@ -135,8 +169,12 @@ class Ui_MainWindow(object):
         self.dataMenu.setText(_translate("MainWindow", "Data"))
         self.graphMenu.setText(_translate("MainWindow", "Graph"))
         self.cameraMenu.setText(_translate("MainWindow", "Camera"))
-        self.humiLabel.setText(_translate("MainWindow", "50%"))
-        self.tempLabel.setText(_translate("MainWindow", "27°C"))
+        self.label.setText(_translate("MainWindow", "Welcome to Smartfarm - ESC"))
+        self.connectButton.setText(_translate("MainWindow", "Connect to Smartfarm"))
+        self.connectButton_2.setText(_translate("MainWindow", "Reconnect"))
+        self.label_2.setText(_translate("MainWindow", "ERROR: Invaild Connection"))
+        self.humiLabel.setText(_translate("MainWindow", "99%"))
+        self.tempLabel.setText(_translate("MainWindow", "99°C"))
 
 from PyQt5 import QtWebEngineWidgets
 from pyqtgraph import PlotWidget
@@ -150,3 +188,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
