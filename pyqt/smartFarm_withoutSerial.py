@@ -1,17 +1,8 @@
-import serial
-from PyQt5 import QtCore, QtGui, QtWidgets
 from smartFarm_gui import *
 import pyqtgraph as pg
 import threading
 import time
 import random
-
-# ser = serial.Serial(port='COM5',
-#                     baudrate=115200,
-#                     parity=serial.PARITY_NONE,
-#                     stopbits=serial.STOPBITS_ONE,
-#                     bytesize=serial.EIGHTBITS,
-#                     timeout=1)
 
 red_status = 1
 green_status = 1
@@ -175,6 +166,7 @@ if __name__=="__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
+    ui.stackedWidget.setCurrentIndex(0)
     ui.event()
     ui.widget_2.setUrl(QUrl("http://www.naver.com/"))
     t = threading.Thread(target=ui.updating, args=())

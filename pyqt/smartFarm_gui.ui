@@ -26,102 +26,24 @@
     <property name="styleSheet">
      <string notr="true">background-color: rgb(35, 44, 53);</string>
     </property>
-    <widget class="QWidget" name="navigation_bar" native="true">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>800</width>
-       <height>67</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(128, 160, 193);</string>
-     </property>
-     <widget class="QWidget" name="widget" native="true">
-      <property name="geometry">
-       <rect>
-        <x>12</x>
-        <y>13</y>
-        <width>441</width>
-        <height>43</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-image: url(:/Texts/images_backup/7inch_title.png);</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="controlMenu">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>0</y>
-        <width>81</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Control</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="dataMenu">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>0</y>
-        <width>81</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Data</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="graphMenu">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>0</y>
-        <width>81</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Graph</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="cameraMenu">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>0</y>
-        <width>81</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Camera</string>
-      </property>
-     </widget>
-    </widget>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>70</y>
-       <width>800</width>
-       <height>413</height>
+       <y>0</y>
+       <width>801</width>
+       <height>481</height>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="startPage">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
          <x>130</x>
-         <y>60</y>
+         <y>100</y>
          <width>551</width>
          <height>41</height>
         </rect>
@@ -146,7 +68,7 @@
        <property name="geometry">
         <rect>
          <x>160</x>
-         <y>220</y>
+         <y>260</y>
          <width>501</width>
          <height>101</height>
         </rect>
@@ -160,12 +82,12 @@ font: 18pt &quot;NanumSquare&quot;;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QWidget" name="error">
-      <widget class="QPushButton" name="connectButton_2">
+     <widget class="QWidget" name="errorPage">
+      <widget class="QPushButton" name="reconnectButton">
        <property name="geometry">
         <rect>
          <x>160</x>
-         <y>220</y>
+         <y>260</y>
          <width>501</width>
          <height>101</height>
         </rect>
@@ -178,11 +100,11 @@ font: 18pt &quot;NanumSquare&quot;;</string>
         <string>Reconnect</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
          <x>130</x>
-         <y>60</y>
+         <y>100</y>
          <width>551</width>
          <height>41</height>
         </rect>
@@ -204,218 +126,311 @@ font: 18pt &quot;NanumSquare&quot;;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QWidget" name="page">
-      <widget class="QWidget" name="ui_widget" native="true">
+     <widget class="QWidget" name="mainPage">
+      <widget class="QWidget" name="navigation_bar" native="true">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>10</y>
-         <width>553</width>
-         <height>363</height>
+         <x>0</x>
+         <y>0</y>
+         <width>800</width>
+         <height>67</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-image:url(:/Widget/images_backup/fisrt_ui.png)</string>
+        <string notr="true">background-color: rgb(128, 160, 193);</string>
        </property>
-       <widget class="QWidget" name="red_bulb" native="true">
+       <widget class="QWidget" name="widget" native="true">
         <property name="geometry">
          <rect>
-          <x>251</x>
-          <y>45</y>
-          <width>67</width>
-          <height>81</height>
+          <x>12</x>
+          <y>13</y>
+          <width>441</width>
+          <height>43</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/icon/images_backup/67x81_red_bulb.png);</string>
+         <string notr="true">background-image: url(:/Texts/images_backup/7inch_title.png);</string>
         </property>
        </widget>
-       <widget class="QWidget" name="green_bulb" native="true">
+       <widget class="QPushButton" name="controlMenu">
         <property name="geometry">
          <rect>
-          <x>357</x>
-          <y>45</y>
-          <width>67</width>
-          <height>81</height>
+          <x>480</x>
+          <y>0</y>
+          <width>81</width>
+          <height>71</height>
          </rect>
         </property>
-        <property name="styleSheet">
-         <string notr="true">background-image: url(:/icon/images_backup/67x81_green_bulb.png);</string>
+        <property name="text">
+         <string>Control</string>
         </property>
        </widget>
-       <widget class="QWidget" name="white_bulb" native="true">
+       <widget class="QPushButton" name="dataMenu">
         <property name="geometry">
          <rect>
-          <x>462</x>
-          <y>45</y>
-          <width>67</width>
-          <height>81</height>
+          <x>560</x>
+          <y>0</y>
+          <width>81</width>
+          <height>71</height>
          </rect>
         </property>
-        <property name="styleSheet">
-         <string notr="true">background-image: url(:/icon/images_backup/67x81_white_bulb.png);</string>
+        <property name="text">
+         <string>Data</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="graphMenu">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>0</y>
+          <width>81</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Graph</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cameraMenu">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>0</y>
+          <width>81</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera</string>
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="redButton">
+      <widget class="QStackedWidget" name="farmStack">
        <property name="geometry">
         <rect>
-         <x>95</x>
-         <y>26</y>
-         <width>117</width>
-         <height>46</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
-border : none;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="greenButton">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>94</y>
-         <width>117</width>
-         <height>46</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
-border : none;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="whiteButton">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>162</y>
-         <width>117</width>
-         <height>46</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
-border : none;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="humiLabel">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>295</y>
-         <width>117</width>
-         <height>33</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>나눔스퀘어 Light</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>99%</string>
-       </property>
-       <property name="textFormat">
-        <enum>Qt::AutoText</enum>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="tempLabel">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>348</y>
-         <width>117</width>
-         <height>33</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>나눔스퀘어 Light</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>99°C</string>
-       </property>
-       <property name="textFormat">
-        <enum>Qt::AutoText</enum>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="page_2"/>
-     <widget class="QWidget" name="page_3">
-      <widget class="PlotWidget" name="tempView">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
+         <x>0</x>
          <y>70</y>
-         <width>361</width>
-         <height>291</height>
+         <width>800</width>
+         <height>413</height>
         </rect>
        </property>
-      </widget>
-      <widget class="PlotWidget" name="humiView">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>70</y>
-         <width>361</width>
-         <height>291</height>
-        </rect>
+       <property name="currentIndex">
+        <number>0</number>
        </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="page_4">
-      <widget class="QWebEngineView" name="widget_2" native="true">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>10</y>
-         <width>520</width>
-         <height>390</height>
-        </rect>
-       </property>
+       <widget class="QWidget" name="page">
+        <widget class="QWidget" name="ui_widget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>553</width>
+           <height>363</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image:url(:/Widget/images_backup/fisrt_ui.png)</string>
+         </property>
+         <widget class="QWidget" name="red_bulb" native="true">
+          <property name="geometry">
+           <rect>
+            <x>251</x>
+            <y>45</y>
+            <width>67</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/icon/images_backup/67x81_red_bulb.png);</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="green_bulb" native="true">
+          <property name="geometry">
+           <rect>
+            <x>357</x>
+            <y>45</y>
+            <width>67</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/icon/images_backup/67x81_green_bulb.png);</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="white_bulb" native="true">
+          <property name="geometry">
+           <rect>
+            <x>462</x>
+            <y>45</y>
+            <width>67</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/icon/images_backup/67x81_white_bulb.png);</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="redButton">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>26</y>
+           <width>117</width>
+           <height>46</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
+border : none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="greenButton">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>94</y>
+           <width>117</width>
+           <height>46</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
+border : none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="whiteButton">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>162</y>
+           <width>117</width>
+           <height>46</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/icon/images_backup/117x46_on_button.png);
+border : none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="humiLabel">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>295</y>
+           <width>117</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어 Light</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>99%</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tempLabel">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>348</y>
+           <width>117</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어 Light</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>99°C</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_2"/>
+       <widget class="QWidget" name="page_3">
+        <widget class="PlotWidget" name="tempView">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>361</width>
+           <height>291</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="PlotWidget" name="humiView">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>70</y>
+           <width>361</width>
+           <height>291</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_4">
+        <widget class="QWebEngineView" name="widget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>10</y>
+           <width>520</width>
+           <height>390</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </widget>
     </widget>

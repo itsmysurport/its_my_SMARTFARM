@@ -1,18 +1,9 @@
-import serial
-from PyQt5 import QtCore, QtGui, QtWidgets
 from smartFarm_gui import *
 import pyqtgraph as pg
 from PyQt5.QtCore import QTimer
 
 x = [2,4,6,8,10]
 y = [1,2,3,4,5]
-
-ser = serial.Serial(port='COM5',
-                    baudrate=115200,
-                    parity=serial.PARITY_NONE,
-                    stopbits=serial.STOPBITS_ONE,
-                    bytesize=serial.EIGHTBITS,
-                    timeout=1)
 
 red_status = 1
 green_status = 1
