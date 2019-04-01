@@ -1,6 +1,7 @@
 from smartFarm_gui import *
 from ConnectHelper import *
 from Debug_pg import *
+from mainEvent import *
 
 if __name__=="__main__":
     import sys
@@ -9,8 +10,10 @@ if __name__=="__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    ch = ConnectHelper(ui)
-    db = DebugMode(ui)
-    
+
+    ConnectHelp = ConnectHelper(ui)
+    DebugMode = DebugMode(ui)
+    mainEvent = smartFarmMain(ui)
+
     MainWindow.show()
     sys.exit(app.exec_())
